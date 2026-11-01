@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzometr Privacy Policy</title>
+<style>
+  /* Layout: single centered column, like a printed one-page notice; a fixed
+     language tab pair up top switches the whole page between pl/en. */
+  :root {
+    --bg: #F5F3EE;
+    --bg-inset: #ECE8DF;
+    --surface: #FFFFFF;
+    --border: #E1DACB;
+    --ink: #2B231D;
+    --ink-soft: #6B6055;
+    --tomato: #C1442A;
+    --tomato-soft: #F4DED7;
+    --basil: #55703F;
+    --basil-soft: #E1E8D3;
+    --semolina: #D9A441;
+    --font-display: 'Big Shoulders', 'Arial Narrow', sans-serif;
+    --font-body: 'Archivo', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1613;
+      --bg-inset: #14100E;
+      --surface: #241D19;
+      --border: #3B3129;
+      --ink: #F1E9DF;
+      --ink-soft: #C2B5A6;
+      --tomato: #E36A4E;
+      --tomato-soft: #3F241C;
+      --basil: #8FB073;
+      --basil-soft: #2B3423;
+      --semolina: #E8BE6E;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1613;
+    --bg-inset: #14100E;
+    --surface: #241D19;
+    --border: #3B3129;
+    --ink: #F1E9DF;
+    --ink-soft: #C2B5A6;
+    --tomato: #E36A4E;
+    --tomato-soft: #3F241C;
+    --basil: #8FB073;
+    --basil-soft: #2B3423;
+    --semolina: #E8BE6E;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 32px 64px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .logo {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(28px, 7vw, 36px);
+    letter-spacing: 0.3px;
+    color: var(--tomato);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .subtitle {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 2px 0 28px;
+  }
+
+  .lang-tabs {
+    display: inline-flex;
+    gap: 4px;
+    background: var(--bg-inset);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px;
+    margin-bottom: 28px;
+  }
+  .lang-tabs button {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    border: none;
+    background: transparent;
+    color: var(--ink-soft);
+    padding: 7px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .lang-tabs button[aria-pressed="true"] {
+    background: var(--surface);
+    color: var(--tomato);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+
+  .lede {
+    font-size: 17px;
+    line-height: 1.55;
+    background: var(--basil-soft);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin: 0 0 32px;
+  }
+  .lede strong { color: var(--basil); }
+
+  section { margin-bottom: 28px; }
+  section h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+  section p, section li {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  section ul { padding-left: 20px; margin: 8px 0; }
+  section li { margin-bottom: 4px; }
+  section strong { color: var(--ink); font-weight: 600; }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+  }
+  .contact a {
+    color: var(--tomato);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+</style>
+
+<style>
+  @font-face { font-family: 'Archivo'; src: url('fonts/Archivo.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: 'Big Shoulders'; src: url('fonts/BigShoulders.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
+</style>
+</head>
+<body>
+<main>
+  <div class="masthead">
+    <svg class="logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="var(--bg-inset)" stroke="var(--semolina)" stroke-width="3"/>
+      <path d="M 24 24 L 24 5 A 19 19 0 0 1 40.4 33.5 Z" fill="var(--tomato)"/>
+      <circle cx="30" cy="16" r="2" fill="var(--basil)"/>
+      <circle cx="33.5" cy="22.5" r="1.6" fill="var(--semolina)"/>
+      <circle cx="27" cy="21" r="1.4" fill="var(--basil)"/>
+    </svg>
+    <h1>Pizzometr</h1>
+  </div>
+  <p class="subtitle" data-lang="pl active">Polityka prywatności</p>
+  <p class="subtitle" data-lang="en">Privacy Policy</p>
+
+  <div class="lang-tabs" role="tablist" aria-label="Language">
+    <button type="button" id="tab-pl" aria-pressed="true">Polski</button>
+    <button type="button" id="tab-en" aria-pressed="false">English</button>
+  </div>
+
+  <!-- ================= POLSKI ================= -->
+  <div data-lang="pl active">
+    <p class="lede"><strong>Krótko:</strong> Pizzometr nie zbiera, nie przechowuje ani nie wysyła żadnych Twoich danych. Aplikacja działa w całości na Twoim telefonie i nie wymaga połączenia z internetem.</p>
+
+    <section>
+      <h2>Jakie dane zbiera aplikacja</h2>
+      <p>Żadne. Pizzometr nie ma kont użytkowników, nie zawiera narzędzi analitycznych, reklam ani śledzenia. Aplikacja nie wysyła żadnych informacji do mnie ani do jakiegokolwiek podmiotu trzeciego — nie ma w niej kodu, który łączyłby się z siecią.</p>
+    </section>
+
+    <section>
+      <h2>Co jest zapisywane na telefonie</h2>
+      <p>Aplikacja zapamiętuje lokalnie, wyłącznie na Twoim urządzeniu, dwa ustawienia:</p>
+      <ul>
+        <li><strong>wybrany motyw</strong> (jasny / ciemny / systemowy),</li>
+        <li><strong>wybrany język</strong> interfejsu.</li>
+      </ul>
+      <p>Te dane nigdy nie opuszczają telefonu i znikają po odinstalowaniu aplikacji. Wartości wpisywane do kalkulatora (hydracja, sól, czas fermentacji itd.) nie są nigdzie zapisywane — liczą się na bieżąco i znikają po zamknięciu aplikacji.</p>
+    </section>
+
+    <section>
+      <h2>Uprawnienia</h2>
+      <p>Pizzometr nie prosi o żadne uprawnienia systemowe — nie potrzebuje dostępu do internetu, aparatu, lokalizacji, kontaktów ani plików.</p>
+    </section>
+
+    <section>
+      <h2>Usługi stron trzecich</h2>
+      <p>Aplikacja nie korzysta z żadnych zewnętrznych usług, bibliotek analitycznych ani reklamowych (np. Google Analytics, Firebase, AdMob). Czcionki użyte w interfejsie są dołączone bezpośrednio do aplikacji, a nie pobierane z sieci.</p>
+    </section>
+
+    <section>
+      <h2>Dzieci</h2>
+      <p>Pizzometr nie jest kierowany do dzieci i nie zbiera danych od nikogo, niezależnie od wieku — ponieważ nie zbiera danych od nikogo w ogóle.</p>
+    </section>
+
+    <section>
+      <h2>Zmiany w polityce</h2>
+      <p>Jeśli funkcje aplikacji kiedyś zaczną wymagać przetwarzania danych (np. opcjonalna synchronizacja zapisanych receptur), ta strona zostanie zaktualizowana z wyprzedzeniem, a data poniżej się zmieni.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Kontakt</h2>
+      <p>Pytania dotyczące tej polityki prywatności możesz kierować na: <a href="mailto:szymonch6@gmail.com">szymonch6@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div data-lang="en">
+    <p class="lede"><strong>In short:</strong> Pizzometr does not collect, store, or transmit any of your data. The app runs entirely on your phone and does not require an internet connection.</p>
+
+    <section>
+      <h2>What data the app collects</h2>
+      <p>None. Pizzometr has no user accounts and contains no analytics, advertising, or tracking tools. The app does not send any information to me or to any third party — there is no code in it that connects to the network.</p>
+    </section>
+
+    <section>
+      <h2>What is stored on your phone</h2>
+      <p>The app remembers two settings locally, only on your own device:</p>
+      <ul>
+        <li>your <strong>chosen theme</strong> (light / dark / system),</li>
+        <li>your <strong>chosen interface language</strong>.</li>
+      </ul>
+      <p>This data never leaves your phone and is deleted when you uninstall the app. Values you type into the calculator (hydration, salt, fermentation time, etc.) are never saved anywhere — they're computed on the fly and disappear when you close the app.</p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <p>Pizzometr does not request any system permissions — it needs no access to the internet, camera, location, contacts, or files.</p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+      <p>The app does not use any external services, analytics, or advertising libraries (e.g. Google Analytics, Firebase, AdMob). The fonts used in the interface are bundled directly with the app rather than fetched over the network.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>Pizzometr is not directed at children and does not collect data from anyone, regardless of age — because it does not collect data from anyone at all.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If a future feature ever requires processing data (for example, optional syncing of saved recipes), this page will be updated in advance, and the date below will change.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Questions about this privacy policy can be sent to: <a href="mailto:szymonch6@gmail.com">szymonch6@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <span data-lang="pl active">Pizzometr · com.siemanko.pizzometr · Ostatnia aktualizacja: 1 października 2026</span>
+    <span data-lang="en">Pizzometr · com.siemanko.pizzometr · Last updated: October 1, 2026</span>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var tabs = { pl: document.getElementById('tab-pl'), en: document.getElementById('tab-en') };
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(function (el) {
+        var langs = el.getAttribute('data-lang').split(' ');
+        el.classList.toggle('active', langs.indexOf(lang) !== -1);
+      });
+      tabs.pl.setAttribute('aria-pressed', String(lang === 'pl'));
+      tabs.en.setAttribute('aria-pressed', String(lang === 'en'));
+      try { localStorage.setItem('pizzometr-privacy-lang', lang); } catch (e) {}
+    }
+    tabs.pl.addEventListener('click', function () { setLang('pl'); });
+    tabs.en.addEventListener('click', function () { setLang('en'); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('pizzometr-privacy-lang'); } catch (e) {}
+    if (saved === 'en' || (!saved && !/^pl/i.test(navigator.language || ''))) {
+      setLang(saved || 'en');
+    }
+  })();
+</script>
+</body>
+</html>
